@@ -35,12 +35,12 @@ const unsigned int captureBufSize = 1024;                      // Size of the IR
 const bool toggleRC = true;                                    // Toggle RC signals every other transmission
 
 #if defined(ARDUINO_ESP8266_WEMOS_D1R1) || defined(ARDUINO_ESP8266_WEMOS_D1MINI) || defined(ARDUINO_ESP8266_WEMOS_D1MINIPRO) || defined(ARDUINO_ESP8266_WEMOS_D1MINILITE)
-const uint16_t  pinr1 = D5;                                          // Receiving pin (GPIO14)
-const uint16_t  pins1 = D6;                                          // Transmitting preset 1 (GPIO12)
-const uint16_t  configpin = D2;                                      // Reset Pin (GPIO4)
-const uint16_t  pins2 = 5;                                           // Transmitting preset 2
-const uint16_t  pins3 = 12;                                          // Transmitting preset 3
-const uint16_t  pins4 = 13;                                          // Transmitting preset 4
+const uint16_t  pinr1 = D3;                                          // Receiving pin (GPIO0)
+const uint16_t  pins1 = D7;                                          // Transmitting preset 1 (GPIO13)
+const uint16_t  configpin = D1;                                      // Reset Pin (GPIO5)
+const uint16_t  pins2 = D6;                                          // Transmitting preset 2 (GPIO12)
+const uint16_t  pins3 = D5;                                          // Transmitting preset 3 (GPIO14)
+const uint16_t  pins4 = D0;                                          // Transmitting preset 4 (GPIO16)
 #else
 const uint16_t  pinr1 = 14;                                          // Receiving pin
 const uint16_t  pins1 = 4;                                           // Transmitting preset 1
